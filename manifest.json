@@ -1,10 +1,46 @@
 {
     "name": "BreakoutStop",
     "version": "0.1",
-
+    "manifest_version": 2,
     "description": "Prevents websites breaking out of iFrames",
     "homepage_url": "https://www.feldstudie.net",
+
+    "permissions": [
+        "activeTab",
+        "notifications"
+    ],
+
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+
+    "omnibox": {
+        "keyword": "bos"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": [
+                "jquery-2.1.1.min.js",
+                "content.js"
+            ],
+            "run_at": "document_start",
+            "all_frames": true
+        }
+    ],
+
+    "web_accessible_resources": [
+        "jquery-2.1.1.min.js"
+    ],
+
+    "options_page": "options.html",
+
     "browser_action": {
-        "default_title": "BreakoutStop"
+        "default_title": "BreakoutStop",
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
     }
 }
