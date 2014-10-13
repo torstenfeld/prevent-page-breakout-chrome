@@ -1,0 +1,10 @@
+{
+    "name": "BreakoutStop",
+    "version": "0.1",
+
+    "description": "Prevents websites breaking out of iFrames",
+    "homepage_url": "https://www.feldstudie.net",
+    "browser_action": {
+        "default_title": "BreakoutStop"
+    }
+}
