@@ -1,9 +1,10 @@
 {
     "name": "BreakoutStop",
-    "version": "0.1",
+    "version": "0.2",
     "manifest_version": 2,
     "description": "Prevents websites breaking out of iFrames",
     "homepage_url": "https://www.feldstudie.net",
+    "update_url": "http://ulqa.avira.com/extensions/BreakOutStop/chrome/updates.xml",
 
     "permissions": [
         "activeTab",
